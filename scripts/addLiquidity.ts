@@ -11,7 +11,7 @@ async function main() {
 
     console.log("🔹 Adding liquidity...");
     await liquidityContract.addLiquidity(amountWETH, amountUSDC, tickLower, tickUpper);
-    console.log("✅ Liquidity added!");
+    console.log(" Liquidity added!");
 }
 
 main().catch((error) => {

@@ -10,7 +10,7 @@ async function main() {
     const liquidity = await LiquidityContract.deploy(UNISWAP_V3_NFT_MANAGER, WETH, USDC, FEE_TIER);
     await liquidity.waitForDeployment();
 
-    console.log(`✅ Uniswap V3 Liquidity Contract Deployed at: ${await liquidity.getAddress()}`);
+    console.log(` Uniswap V3 Liquidity Contract Deployed at: ${await liquidity.getAddress()}`);
 }
 
 main().catch((error) => {
